@@ -7,6 +7,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.scene.control.Cell;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.GridPane;
 
 /**
  * JavaFX App
@@ -15,9 +18,15 @@ public class App extends Application {
 
     private static Scene scene;
 
+    
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("primary"), 640, 480);
+        
+       
+        
+        scene = new Scene(loadFXML("primary"), 800, 800);
+        stage.setTitle("Tic Tac Toe");
+        
         stage.setScene(scene);
         stage.show();
     }
